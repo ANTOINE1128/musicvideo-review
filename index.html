@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Youtube video player</title>
+    <!-- adding css styles -->
+    <style>
+        body {
+            background-color: black;
+            color: rgb(231, 217, 217);
+            text-align: center;
+        }
+    
+        header,
+        main,
+        aside {
+            padding: 20px;
+            margin: 10px auto;
+            max-width: 800px;
+            background-color: #070707;
+            border-radius: 10px;
+        }
+    
+        iframe {
+            display: block;
+            margin: 0 auto;
+        }
+    
+        h2 {
+            font-size: 24px;
+            font-weight: bold;
+            margin-bottom: 10px;
+        }
+    
+        a {
+            color: red;
+            text-decoration: none;
+            display: block;
+            margin-bottom: 5px;
+        }
+    
+        a:hover {
+            color: #050505;
+            background-color: rgb(6, 6, 7);
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <!--navigation bar-->
+        <div>
+            <nav> <a href="#"> Youtube Video Player</a></nav>
+            <nav> <a href="#"> home</a></nav>
+            <nav> <a href="#"> Subscribe </a></nav>
+            <nav> <a href="#"> related videos</a></nav>
+            <form> <input type="text" placeholder="search">
+                <button type="submit">search</button>
+        
+            </form>
+        
+        </div>
+    </header>
+    <main>
+    <div class="video-container">
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/3NycM9lYdRI" title="YouTube video player"
+            frameborder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+            allowfullscreen></iframe>
+        <a href="#">
+            <h2> Piano Music </h2>
+            <p>Number of views</p>
+        </a>
+    </div> <!--video player -->
+    </main>
+    <aside><!--sidebar-->
+        <h3>suggested videos</h3>
+        <a href="#">other videos
+            <h4> Romantic Piano Music </h4>
+            <p>Number of views</p>
+        </a>
+        <iframe width="200" height="100" src="https://www.youtube.com/embed/29msb8yz3Vg"
+            title="Romantic Piano Love Songs - Soft Relaxing Background Classic Music for Study, Work" frameborder="0"
+            allow="accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+            allowfullscreen></iframe>
+    </aside>
+</body>
+
+</html>
